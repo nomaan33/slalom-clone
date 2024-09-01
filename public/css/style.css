@@ -1,0 +1,101 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    left: 1rem;
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.logo-img {
+    width: 150px;
+    height: auto;
+    position: absolute;
+    left: 1rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+/* .nav-links li {
+    position: relative;
+    margin-left: 1rem;
+} */
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    display: block;
+}
+
+/* Hover Container */
+.hover-container {
+    /* display: none;  */
+    position: absolute;
+    top: 113%;
+    left: 0;
+    width: 100vw;
+    height: 100vh; /* Full height of the viewport */
+    background: #333333;
+    padding: 2rem;
+    box-sizing: border-box;
+    z-index: 1000;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    align-items: center;
+    justify-items: center;
+}
+
+/* Show hover container on hover */
+.nav-links div:hover .hover-container {
+    display: block; 
+}
+
+.list-inline {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.list-inline-item {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 1rem;
+}
+
+.inner-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.inner-list li {
+    margin: 0;
+}
+
